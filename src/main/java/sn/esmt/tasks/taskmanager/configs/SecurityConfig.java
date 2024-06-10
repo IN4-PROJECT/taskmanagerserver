@@ -71,6 +71,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         config.setAllowCredentials(true);
         config.addAllowedOrigin("http://127.0.0.1:4200");
         config.addAllowedOrigin("http://localhost:4200");
+        config.addAllowedOrigin("https://task-manager-client-kappa.vercel.app");
         config.addAllowedHeader("*");
         config.addAllowedMethod("OPTIONS");
         config.addAllowedMethod("GET");
